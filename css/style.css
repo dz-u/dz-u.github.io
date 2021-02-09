@@ -1,0 +1,187 @@
+
+*{
+    background-color:black;
+    font-family: 'Vollkorn', serif;
+}
+
+.header-logo{
+    width: 100%;
+    height:100%;
+    font-size:10em;
+    text-align:center;
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:500px) {
+    .header-logo{
+        font-size:7em;
+        color:white;
+    }
+}
+
+
+
+ul{
+    list-style:none;
+}
+
+.menu-list{
+    padding:0;
+    width:100%;
+    text-align:center;
+    margin-right:auto;
+}
+
+.menu-list-item{
+    margin-right:1em;
+    font-size:2em;
+    display:inline;
+    text-decoration:none;
+    height:auto;
+    padding:0.5em;
+}
+
+a{
+    color:white;
+
+}
+
+a:hover{
+    color:darkgray;
+}
+
+@media screen and (max-width:500px) {
+    .menu-list-item{
+        font-size:1em;
+        margin-right:0.3em;
+        padding:0.1em;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .About-Intro{
+        font-size:0.5em;
+    }
+    
+}
+
+h1{
+    color:white;
+    font-size:4em;
+    height:auto;
+    width:100%;
+    text-decoration:underline;
+    text-align:center;
+}
+
+.About img{
+    width:40%;
+    height:60%;
+    padding-right:3em;
+    padding-left:3em;
+}
+
+.About-Intro{
+    display:flex;
+}
+
+.About-Intro p{
+    color:white;
+    font-size:2em;
+}
+
+.Works-list{
+    display:flex;
+}
+
+.Omikuji-pic{
+    padding:0 3em;
+}
+
+.Bingo-pic{
+    padding:0 3em;
+}
+
+.Works-item{
+    width:40%;
+    text-align:center;
+}
+
+
+
+.Works-item p{
+    font-size:2em;
+    color:white;
+    text-align:center;
+}
+
+
+
+@media screen and (max-width:500px) {
+    .Works-item{
+        margin:0;
+        padding:0;
+        width:100%;
+        font-size:0.6em;
+        text-align:center;
+    }
+    .Works-list{
+        display:inline;
+    }
+    .Works-item img{
+        width:40%;
+        height:60%;
+    }
+}
+
+.Contact-item p{
+    font-size:2em;
+    color:white;
+    text-align:center;
+}
+
+.Contact-list{
+    display:flex;
+}
+
+.Contact-item{
+    width:40%;
+    text-align:center;
+}
+
+.twitter-icon{
+    width:40%;
+    height:60%;
+}
+
+.github-icon{
+    width:40%;
+    height:60%;
+}
+
+@media screen and (max-width:500px) {
+    .Contact-item{
+        margin:0;
+        padding:0;
+        width:100%;
+        font-size:1em;
+        text-align:center;
+    }
+    .Contact-list{
+        display:inline;
+    }
+}
+
+.Blog-link p{
+    font-size:1.5em;
+}
+
+.Blog{
+    text-align:center;
+}
+
+.Blog-link img{
+    width:40%;
+    height:60%;
+}
