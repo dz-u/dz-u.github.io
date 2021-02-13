@@ -4,6 +4,60 @@
     font-family: 'Vollkorn', serif;
 }
 
+.hamburger{
+    width:100%;
+    height:10%;
+    text-align: right;
+}
+
+.hamburger img{
+    height:10%;
+    width:5%;
+}
+
+@media screen and (max-width:500px) {
+    .hamburger img{
+        height:5%;
+        width:9%;
+    }
+    .phone-none{
+        pointer-events: none;
+    }
+    .hamburger img{
+        display:none;
+    }
+}
+
+#nav{
+    position:fixed;
+    right:-150px;
+    top:0;
+    width:150px;
+    height:100%;
+}
+
+.show{
+    transform:translate3d(-150px, 0, 0);
+    background-color: white;
+}
+
+.navi ul{
+    border-bottom: solid, 0.1em;
+    margin-top: 2%;
+    background-color: white;
+}
+
+.navi-item{
+    background-color: white;
+    margin-top: 1em;
+}
+
+.navi-link{
+    background-color: white;
+    color:black;
+    font-size: 1em;
+}
+
 .header-logo{
     width: 100%;
     height:100%;
@@ -18,9 +72,12 @@
         font-size:7em;
         color:white;
     }
+
 }
 
-
+#wrapper, #nav{
+    transition: transform 0.3s;
+}
 
 ul{
     list-style:none;
@@ -146,7 +203,7 @@ h1{
 }
 
 .Contact-item{
-    width:40%;
+    width:50%;
     text-align:center;
 }
 
@@ -174,7 +231,7 @@ h1{
 }
 
 .Blog-link p{
-    font-size:1.5em;
+    font-size:2em;
 }
 
 .Blog{
@@ -182,6 +239,22 @@ h1{
 }
 
 .Blog-link img{
-    width:40%;
-    height:60%;
+    width:20%;
+    height:40%;
+}
+
+@media screen and (max-width:500px) {
+    .Blog-link img{
+        width:40%;
+        height:60%;
+    }
+
+    .Blog-link p{
+        font-size:1.5em;
+    }
+}
+
+.Back-to-Top{
+    font-size:2em;
+    color:white;
 }

@@ -7,10 +7,26 @@
     <title>MyIntroduce</title>
 </head>
 <body>
+    <div class="phone-none">
+        <section id="wrapper" >
+            <div class="hamburger" id="open_nav">
+                <img src="./img/humburger.png" alt="">
+            </div>
+        </section>
+        <nav id="nav" >
+            <div class="navi">
+                <ul>
+                    <li class="navi-item"><a href="#" class="navi-link">Home</a></li>
+                    <li class="navi-item"><a href="#About" class="navi-link">About</a></li>
+                    <li class="navi-item"><a href="#Contact" class="navi-link">Contact</a></li>
+                    <li class="navi-item"><a href="#Blog" class="navi-link">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <section class="header">
         <h1 class="header-logo">dzu</h1>
     </section>
-    
     <section class="menu">
         <ul class="menu-list">
             <a href="#About" class="menu-list-item" data-scroll>About</a>
@@ -63,6 +79,17 @@
             <p class="Blog-word">はてなブログ</p>
         </a>
     </section>
-    <script src="js/main.js"></script>
+    <section>
+        <a href="#"  class="Back-to-Top">Back to Top</a>
+    </section>
+    <script type="text/javascript" src="./img/jquery-3.5.1.min.js"></script>
+    <script>
+    'use strict';
+    $(document).ready(function(){
+        $('#open_nav').on('click', function(){
+            $('#wrapper, #nav').toggleClass('show');
+        });
+    });
+    </script>
 </body>
 </html>
